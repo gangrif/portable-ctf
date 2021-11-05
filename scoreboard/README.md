@@ -2,6 +2,9 @@
 ## WARNING
 This application is old and out of date, i tell you this so you know what youre getting into.  Once this has been reviewed and validated, this warning will go away. 
 
+For starters, this is a composer app, and updating the components breaks the app. 
+Also, Silex is abandoned, and is a core framework of this app.  
+
 ## What is here
 /apache-config/
 This contains an example apache drop-in configuration
