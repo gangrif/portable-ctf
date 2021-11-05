@@ -39,20 +39,20 @@ try:
     gateId = cur.fetchone()
 
     if gateId is None:
-        print "The gate id does not exist"
+        print("The gate id does not exist")
         sys.exit(2)
     if uniqueCode is not None:
       cur.execute("DELETE FROM codes WHERE code = ?", uniqueCode)
 
     if args.web:
-        print "Content-type: text/html\n\n"
+        print("Content-type: text/html\n\n")
     if uniqueCode is not None:
-      print "%s-%s" % (gateId[0], uniqueCode[0])
+      print("%s-%s" % (gateId[0], uniqueCode[0]))
     else:
-      print "%s" % gateId[0]
+      print("%s" % gateId[0])
 
-except lite.Error, e:
-    print "Error %s:" % e.args[0]
+except lite.Error:
+    print("Error %s:" % lite.Error.args[0])
     sys.exit(3)
 
 finally:
