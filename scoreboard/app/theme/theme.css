@@ -1,0 +1,57 @@
+/* Sticky footer styles
+ * -------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #000000;
+    color: #00FF00;
+    font-family: 'VT323', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  src: local('VT323 Regular'), local('VT323-Regular'), url(https://fonts.gstatic.com/s/vt323/v11/pxiKyp0ihIEF2isfFJA.ttf) format('truetype');
+}
+
+
+h2 {
+  font-size: 40px;
+  color: #42f5f5;
+}
+
+input {
+  color: #000000;
+}
+
+button {
+  color: #000000;
+}
+
+a:link, a:visited {
+  color: #00FF00;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #050505;
+}
+.container .text-muted {
+    margin: 20px 0;
+}
+
+.jumbotron {
+    background-color: #000000;
+    background-image: url('/images/610-header.jpg');
+}

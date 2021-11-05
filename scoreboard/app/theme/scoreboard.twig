@@ -1,0 +1,22 @@
+<div class='col-md-6 col-xs-12'>
+    <div class='page-header'>
+        <h1> Leaderboard </h1>
+    </div>
+    <table class='scoreboard table'>
+        <tr class='scoreboard-row-header'>
+            <th> # </th>
+            <th> User </th>
+            <th> Score </th>
+        </tr>
+
+        {% set i = 0 %}
+        {% for score in scores %}
+            <tr class='scoreboard-row'>
+                <td> {{ i }}
+                <td> {{ score.user|e }} </td>
+                <td> {{ score.score|e }} </td>
+            </tr>
+            {% set i = i + 1 %}
+        {% endfor %}
+    </table>
+</div>
